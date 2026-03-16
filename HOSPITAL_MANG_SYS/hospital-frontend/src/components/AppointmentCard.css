@@ -1,0 +1,127 @@
+/* src/components/AppointmentCard.css */
+
+.appointment-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border-left: 5px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s;
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card.blue { border-left-color: #3b82f6; }
+.appointment-card.green { border-left-color: #10b981; }
+.appointment-card.red { border-left-color: #ef4444; }
+.appointment-card.gray { border-left-color: #6b7280; }
+
+.appointment-header {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.appointment-date-time {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.date {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.time {
+  color: #666666;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+.appointment-doctor h4 {
+  margin: 0 0 0.25rem 0;
+  color: #1a1a1a;
+}
+
+.specialty {
+  margin: 0;
+  color: #0066CC;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.status-badge.blue {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.status-badge.green {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.status-badge.red {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.appointment-body {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.appointment-body p {
+  margin: 0.5rem 0;
+  color: #666666;
+}
+
+.appointment-footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-details,
+.btn-cancel {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-details {
+  background: #f8f9fa;
+  color: #0066CC;
+}
+
+.btn-cancel {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.appointment-details {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-top: 1px solid #e5e7eb;
+}

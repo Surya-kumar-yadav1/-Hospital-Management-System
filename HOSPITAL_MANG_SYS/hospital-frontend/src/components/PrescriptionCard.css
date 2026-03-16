@@ -1,0 +1,79 @@
+/* src/components/PrescriptionCard.css */
+
+.prescription-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 5px solid #10b981;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.prescription-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.prescription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.medication-name h4 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.prescribed-by {
+  margin: 0.25rem 0 0 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.prescription-date {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.prescription-details {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.detail .label {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.detail .value {
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.btn-download {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--background-light);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-download:hover {
+  background: var(--primary-color);
+  color: white;
+}

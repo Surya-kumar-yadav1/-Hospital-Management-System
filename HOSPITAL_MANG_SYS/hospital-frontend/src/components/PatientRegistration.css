@@ -1,0 +1,359 @@
+/* REGISTRATION PAGE */
+.registration-page {
+  background: linear-gradient(to bottom, #f5f7fa, #ffffff);
+  min-height: calc(100vh - 70px);
+  padding: 2rem 1rem;
+}
+
+.registration-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 3rem 2rem;
+}
+
+.registration-card h1 {
+  color: #333;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.registration-card > p {
+  color: #666;
+  font-size: 1.05rem;
+  margin: 0 0 2rem 0;
+}
+
+/* FORM STYLING */
+.registration-card form {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0066CC;
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* BUTTONS */
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  background: #0066CC;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: #004C99;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ERROR MESSAGE */
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 2px solid #ef4444;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* INFO BOX (STEP 2) */
+.info-box {
+  background: #f0f7ff;
+  border-left: 4px solid #0066CC;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.info-box p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.save-id {
+  color: #ef4444 !important;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/* PASSWORD STRENGTH */
+.password-strength {
+  padding: 0.75rem 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.password-strength p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.password-strength .strong {
+  color: #10b981;
+}
+
+.password-strength .weak {
+  color: #ef4444;
+}
+
+/* SUCCESS STATE */
+.registration-card.success {
+  text-align: center;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-card.success h1 {
+  color: #10b981;
+}
+
+/* SUCCESS DETAILS */
+.success-details {
+  background: #f0f7ff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.success-details p {
+  margin: 1rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.success-details code {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: #0066CC;
+}
+
+.important {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 1rem;
+  border-left: 4px solid #ef4444;
+  border-radius: 6px;
+  font-weight: 600 !important;
+}
+
+/* NEXT STEPS */
+.next-steps {
+  background: white;
+  border: 2px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.next-steps h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.next-steps ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.next-steps li {
+  padding: 0.75rem 0;
+  color: #666;
+}
+
+.next-steps code {
+  background: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #0066CC;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #004C99;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+}
+
+.btn-secondary {
+  background: #f9f9f9;
+  color: #333;
+  border: 2px solid #e0e0e0;
+}
+
+.btn-secondary:hover {
+  border-color: #0066CC;
+  color: #0066CC;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .registration-card {
+    padding: 2rem 1.5rem;
+    margin: 0;
+  }
+
+  .registration-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-page {
+    padding: 1rem 0;
+  }
+
+  .registration-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .registration-card h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 16px;
+    padding: 0.75rem 1rem;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .success-details,
+  .next-steps {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,89 @@
+/* src/components/BillingCard.css */
+
+.billing-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 5px solid;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.billing-card.green { border-left-color: #10b981; }
+.billing-card.orange { border-left-color: #f59e0b; }
+
+.billing-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.billing-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.bill-id .label,
+.bill-amount .label {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.bill-id .value,
+.bill-amount .value {
+  margin: 0.25rem 0 0 0;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.amount {
+  font-size: 1.5rem;
+  color: #10b981;
+}
+
+.bill-status {
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bill-status.green {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.bill-status.orange {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.billing-details {
+  margin-bottom: 1.5rem;
+}
+
+.billing-details p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.btn-pay {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-pay:hover {
+  background: var(--primary-dark);
+}
